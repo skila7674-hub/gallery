@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.caption {
+    color: chocolate;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.gallery__item {
+    text-align: center;
+}
+
+.gallery__item-img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 25px;
+}
+
+/* планшеты и телефоны */
+@media screen and (max-width: 768px) {
+    .caption {
+        font-size: 30px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 94%;
+    }
+
+    .caption {
+        font-size: 24px;
+    }
+
+    .gallery__item-img {
+        max-width: 100%;
+    }
+}
